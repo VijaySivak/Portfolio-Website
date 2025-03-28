@@ -27,13 +27,7 @@
   </style>
     
   <style>
-    .timeline {
-      position: relative;
-      padding-left: 40px;
-      margin: 0;
-      border-left: 3px solid #000;
-    }
-  
+     
     .timeline-item {
       position: relative;
       margin-bottom: 30px;
@@ -77,13 +71,8 @@
   </style>
     
   <style>
-    .timeline {
-      position: relative;
-      padding-left: 40px;
-      margin: 0;
-      border-left: 3px solid #000;
-    }
   
+
     .timeline-item {
       position: relative;
       margin-bottom: 30px;
@@ -127,13 +116,7 @@
   </style>
   
   <style>
-    .timeline {
-      position: relative;
-      padding-left: 40px;
-      margin: 0;
-      border-left: 3px solid #000;
-    }
-  
+     
     .timeline-item {
       position: relative;
       margin-bottom: 30px;
@@ -175,6 +158,88 @@
       margin-bottom: 5px;
     }
   </style>
+  <style>
+    /* New Horizontal Timeline Styling */
+    .timeline-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 2rem 0;
+      gap: 2rem;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .timeline-item {
+      flex: 0 0 300px;
+      scroll-snap-align: center;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+  
+    .timeline-item:hover {
+      transform: scale(1.05);
+    }
+  
+    .timeline-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      border: 3px solid #000;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .timeline-icon img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  </style>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    #about {
+      animation: fadeInUp 1s ease-out both;
+    }
+  </style>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    #about {
+      animation: fadeInUp 1s ease-out both;
+      background: linear-gradient(to right, #ffffff, #f8f9fa);
+      background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+      /* Optional pattern */
+      background-repeat: repeat;
+      background-size: auto;
+    }
+  </style>
 </head>
 <body>
     <!-- Sticky Navigation Bar -->
@@ -205,20 +270,41 @@
         </div>
       </div>
     </nav>
-  <section id="about" class="py-5 text-center">
+  <section id="about" class="py-5">
     <div class="container">
-      <h1 class="fw-bold mb-4">About</h1>
-      <div class="mb-4">
-        <img src="images/about/1.jpg" alt="Personal Placeholder" class="rounded-circle" style="width: 200px; height: 200px;">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images/about/1.jpg" alt="Personal" class="img-fluid rounded-circle shadow"
+            style="width: 250px; height: 250px; object-fit: cover;">
+        </div>
+        <!-- Text -->
+        <div class="col-md-8">
+          <h2 class="fw-bold mb-3 text-dark" id="typing-text"></h2>
+          <h1 class="fw-bold mb-4 text-center text-md-start">About</h1>
+          <p class="text-muted fs-5">
+            I am a Data Scientist with a Master’s in Data Science from Rutgers University and experience in machine
+            learning, automation, and data analytics.
+          </p>
+          <p class="text-muted fs-5">
+            I've worked at Mercedes-Benz, Kimberly-Clark, and Rutgers Health, optimizing workflows, developing AI-driven
+            solutions, and uncovering insights through data. My expertise spans Python, SQL, predictive modeling, and
+            business intelligence tools. Passionate about leveraging data for innovation, I thrive on solving complex
+            problems and driving meaningful impact. Let’s connect and build something great!
+          </p>
+          <!-- Quick Facts / Badges -->
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <span class="badge bg-dark text-white p-2 px-3">Python Expert</span>
+            <span class="badge bg-secondary text-white p-2 px-3">SQL & BI Tools</span>
+            <span class="badge bg-info text-dark p-2 px-3">AI/ML Projects</span>
+            <span class="badge bg-warning text-dark p-2 px-3">Rutgers Alum</span>
+          </div>
+
+        </div>
       </div>
-      <p class="text-muted mb-4">
-        I am a Data Scientist with a Master’s in Data Science from Rutgers University and experience in machine learning, automation, and data analytics. 
-      </p>
-      <p class="text-muted">
-        I've worked at Mercedes-Benz, Kimberly-Clark, and Rutgers Health, optimizing workflows, developing AI-driven solutions, and uncovering insights through data. My expertise spans Python, SQL, predictive modeling, and business intelligence tools. Passionate about leveraging data for innovation, I thrive on solving complex problems and driving meaningful impact. Let’s connect and build something great!
-      </p>
     </div>
   </section>
+
   <section id="career-timeline" class="py-5">
     <div class="container">
       <h1 class="text-center fw-bold mb-5">Career Timeline</h1>
@@ -297,7 +383,7 @@
               </p>
             </div>
             <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-primary">Blog Post</a>s
               <a href="https://github.com/VijaySivak/Uber-vs-Lyft-Price-Prediction-and-Analysis" class="btn btn-secondary">Source Code</a>
             </div>
           </div>
@@ -498,5 +584,20 @@
     </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const text = "Hi, I'm Vijay — a Data Scientist passionate about turning data into action.";
+    let i = 0;
+    const speed = 40; // typing speed in ms
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.addEventListener('load', typeWriter);
+  </script>
 </body>
 </html>
