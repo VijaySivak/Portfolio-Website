@@ -29,6 +29,24 @@
     }
   </style>
   <style>
+    .btn-custom {
+      background-color: #d8c3a5;
+      color: #2f2f2f;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-custom:hover {
+      background-color: #c9b299;
+      color: #000;
+      transform: translateY(-2px);
+    }
+  </style>
+  <style>
     #career-timeline,
     #projects,
     #skills {
@@ -264,7 +282,7 @@
   
     #about {
       animation: fadeInUp 1s ease-out both;
-      background: linear-gradient(to right, #ffffff, #f8f9fa);
+      background: #faf4ef;
       background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
       /* Optional pattern */
       background-repeat: repeat;
@@ -361,7 +379,7 @@
           </p>
           <p class="text-muted fs-5">
             I've worked at Mercedes-Benz, Kimberly-Clark, and Rutgers Health, optimizing workflows, developing AI-driven
-            solutions, and uncovering insights through data. My expertise spans Python, SQL, predictive modeling, and
+            solutions, and uncovering insights through data. My expertise spans Python, SQL, predictive modeling, machine learning and
             business intelligence tools. Passionate about leveraging data for innovation, I thrive on solving complex
             problems and driving meaningful impact. Let’s connect and build something great!
           </p>
@@ -372,7 +390,12 @@
             <span class="badge bg-info text-dark p-2 px-3">AI/ML Enthusiast</span>
             <span class="badge bg-warning text-dark p-2 px-3">Rutgers Alum</span>
           </div>
-
+          <!-- Resume Download Button -->
+          <div class="text-center text-md-start mt-4">
+            <a href="/Users/vijaysivakumar/Desktop/Projects/Portfolio-Website/documents/Vijay Sivakumar Resume.pdf" download class="btn btn-lg btn-custom">
+              📄 Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>
