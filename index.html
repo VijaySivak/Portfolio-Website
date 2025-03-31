@@ -291,10 +291,10 @@
   </style>
   <style>
     #education .card {
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    }
+  background-color: #f9f9f9; /* Match career timeline cards */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+ }
   
     #education img {
       max-width: 100px;
@@ -372,13 +372,13 @@
               <a class="nav-link" href="#career-timeline">Career Timeline</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Certifications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -418,7 +418,7 @@
           </div>
           <!-- Resume Download Button -->
           <div class="text-center text-md-start mt-4">
-            <a href="/Users/vijaysivakumar/Desktop/Projects/Portfolio-Website/documents/Vijay Sivakumar Resume.pdf" download class="btn btn-lg btn-custom">
+            <a href="documents/Vijay Sivakumar Resume.pdf" download class="btn btn-lg btn-custom">
               📄 Download Resume
             </a>
           </div>
@@ -438,7 +438,7 @@
           </div>
           <div class="timeline-content">
             <h5 class="fw-bold">Kimberly-Clark India Private Limited</h5>
-            <p class="text-muted">Data and Analytics Intern (Jan 2021 - Jun 2021)</p>
+            <p class="text-muted">Data and Analytics Intern (Jan 2021 - July 2021)</p>
             <p>
               ● Decreased costs by 23,500 USD yearly on an average, by implementing the Supplier data quality dashboard.<br>
               ● Spearheaded the entire project of “Supplier Data Synchronization”, for master data management.<br>
@@ -497,6 +497,36 @@
       </div>
     </div>
   </section>
+  <section id="education" class="py-5" style="background-color: #faf4ef;">
+    <div class="container">
+      <h1 class="fw-bold text-center mb-5">Education</h1>
+  
+      <!-- Card Container -->
+      <div class="card p-4 shadow-sm border-0 rounded-4" style="background-color: #fff;">
+        <div class="row g-5 align-items-center justify-content-center text-center text-md-start">
+  
+          <!-- University 1 -->
+          <div class="col-md-6 d-flex flex-column align-items-center">
+            <img src="images/Education/Rutgers.jpeg" alt="Rutgers Logo" style="height: 120px; object-fit: contain;"
+              class="mb-3">
+            <p class="text-muted mb-1">Aug 2023 – Dec 2024</p>
+            <h5 class="fw-bold mb-1">Master of Science in Data Science</h5>
+            <p class="text-muted">Rutgers University, New Brunswick</p>
+          </div>
+  
+          <!-- University 2 -->
+          <div class="col-md-6 d-flex flex-column align-items-center">
+            <img src="images/Education/Ramaiah.png" alt="Ramaiah Logo"
+              style="width: 2400px; height: 120px; object-fit: contain;" class="mb-3">
+            <p class="text-muted mb-1">Aug 2017 – June 2021</p>
+            <h5 class="fw-bold mb-1">Bachelor of Engineering in Information Science</h5>
+            <p class="text-muted">MS Ramaiah Institute of Technology, Bangalore</p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
 <section id="projects" class="py-5" style="background-color: #faf4ef;">
   <div class="container text-center">
     <h1 class="fw-bold mb-5">Projects</h1>
@@ -532,7 +562,7 @@
                 <div class="card-body">
                   <h5 class="card-title fw-bold">Twitter Search Application</h5>
                   <p class="card-text">
-                    Designed a search app using Snowflake, MySQL & MongoDB. Boosted query speed 70x with indexing and
+                    Designed a twitter search app using Snowflake, MySQL & MongoDB. Boosted query speed 70x with indexing and
                     caching. Added ML for sentiment & topic modeling.
                   </p>
                 </div>
@@ -556,7 +586,7 @@
                 </div>
                 <div class="card-footer d-flex justify-content-between">
                   <a href="#" class="btn btn-primary">Blog Post</a>
-                  <a href="#" class="btn btn-secondary">Source Code</a>
+                  <a href="https://github.com/VijaySivak/Examplify-LLM-Exam_Prep_Tool" class="btn btn-secondary">Source Code</a>
                 </div>
               </div>
             </div>
@@ -635,99 +665,94 @@
     </div>
   </div>
 </section>
-  <section id="skills" class="py-5">
-    <div class="container text-center">
-      <h1 class="fw-bold mb-5">Skills</h1>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <!-- Skill 1 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="images/Skills/1.png" class="mb-3" alt="Python" style="width: 80px; height: 80px; object-fit: contain;">
-              <h5 class="card-title fw-bold">Python</h5>
-              <p class="card-text text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0">
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 2 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="images/Skills/2.png" class="mb-3" alt="Data Visualization" style="width: 80px; height: 80px; object-fit: contain;">
-              <h5 class="card-title fw-bold">Data Visualization</h5>
-              <p class="card-text text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0">
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 3 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="images/Skills/3.png" class="mb-3" alt="SQL" style="width: 80px; height: 80px; object-fit: contain;">
-              <h5 class="card-title fw-bold">SQL</h5>
-              <p class="card-text text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0">
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
-        <!-- Skill 4 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="images/Skills/4.png" class="mb-3" alt="Data Storytelling" style="width: 80px; height: 80px; object-fit: contain;">
-              <h5 class="card-title fw-bold">Data Storytelling</h5>
-              <p class="card-text text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0">
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-            </div>
-          </div>
-        </div>
+<section id="skills" class="py-5" style="background-color: #faf4ef;">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-5">Certifications & Badges</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
+
+      <!-- ISTQB -->
+      <div class="col text-center">
+        <img src="images/Certificates/ISTQB.jpeg" alt="ISTQB Logo" class="img-fluid mb-3"
+          style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">ISTQB Certified Tester</h5>
+        <a href="documents/ISTQB Certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
       </div>
-    </div>
-  </section>
-<section id="education" class="py-5" style="background-color: #faf4ef;">
-  <div class="container">
-    <h1 class="fw-bold text-center mb-5">Education</h1>
 
-    <!-- Card Container -->
-    <div class="card p-4 shadow-sm border-0 rounded-4" style="background-color: #fff;">
-      <div class="row g-5 align-items-center justify-content-center text-center text-md-start">
-
-        <!-- University 1 -->
-        <div class="col-md-6 d-flex flex-column align-items-center">
-          <img src="images/Education/Rutgers.jpeg" alt="Rutgers Logo" style="height: 120px; object-fit: contain;" class="mb-3">
-          <p class="text-muted mb-1">Aug 2023 – Dec 2024</p>
-          <h5 class="fw-bold mb-1">Master of Science in Data Science</h5>
-          <p class="text-muted">Rutgers University, New Brunswick</p>
-        </div>
-
-        <!-- University 2 -->
-        <div class="col-md-6 d-flex flex-column align-items-center">
-          <img src="images/Education/Ramaiah.png" alt="Ramaiah Logo"
-            style="width: 2400px; height: 120px; object-fit: contain;" class="mb-3">
-          <p class="text-muted mb-1">Aug 2017 – June 2021</p>
-          <h5 class="fw-bold mb-1">Bachelor of Engineering in Information Science</h5>
-          <p class="text-muted">MS Ramaiah Institute of Technology, Bangalore</p>
-        </div>
-
+      <!-- Python Bootcamp -->
+      <div class="col text-center">
+        <img src="images/Certificates/Udemy.png" alt="Python Badge" class="img-fluid mb-3"
+          style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Python Bootcamp – Udemy</h5>
+        <a href="https://www.udemy.com/certificate/UC-8409bc88-24ba-4446-a538-251160f3507b/" target="_blank"
+          class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
       </div>
+
+      <!-- Power BI -->
+      <div class="col text-center">
+        <img src="images/Certificates/Udemy.png" alt="Power BI Badge" class="img-fluid mb-3"
+          style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Power BI – Udemy</h5>
+        <a href="https://www.udemy.com/certificate/UC-232f6137-0ecb-4775-8e7b-26af53faac00/" target="_blank"
+          class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <!-- Future Certificate Placeholders -->
+      <!--
+      <div class="col text-center">
+        <img src="images/Certificates/aws.png" alt="AWS Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">AWS Certified Cloud Practitioner</h5>
+        <a href="documents/aws_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="col text-center">
+        <img src="images/Certificates/llm.png" alt="LLM Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">LLM Foundations – Coursera</h5>
+        <a href="documents/llm_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="col text-center">
+        <img src="images/Certificates/sql.png" alt="SQL Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Advanced SQL – Datacamp</h5>
+        <a href="documents/sql_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="col text-center">
+        <img src="images/Certificates/azure.png" alt="Azure Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Azure Fundamentals</h5>
+        <a href="documents/azure_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="col text-center">
+        <img src="images/Certificates/git.png" alt="GitHub Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Git/GitHub Mastery</h5>
+        <a href="documents/github_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="col text-center">
+        <img src="images/Certificates/dsbadge.png" alt="DS Badge" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+        <h5 class="fw-bold mb-2">Advanced Data Science – IIIT-B</h5>
+        <a href="documents/data_science_certificate.pdf" target="_blank" class="text-decoration-none text-primary fw-semibold">
+          View Certificate →
+        </a>
+      </div>
+      -->
+
     </div>
   </div>
 </section>
