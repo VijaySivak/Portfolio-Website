@@ -290,6 +290,29 @@
     }
   </style>
   <style>
+    #education .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+  
+    #education img {
+      max-width: 100px;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    #education h5 {
+      font-size: 1.2rem;
+      color: #222;
+    }
+  
+    #education .text-muted {
+      color: #666 !important;
+      font-size: 0.95rem;
+    }
+  </style>
+  <style>
     .contact-icon {
       text-decoration: none;
       color: white;
@@ -353,6 +376,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -471,116 +497,144 @@
       </div>
     </div>
   </section>
-  
-  <section id="projects" class="py-5">
-    <div class="container text-center">
-      <h1 class="fw-bold mb-5">Projects</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Project 1 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/1.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 1</h5>
-              <p class="card-text">
-                Algorithms & concepts used – OLS Regression, LASSO, Decision Tree & Ridge Regression, Bagging Regressor (Bootstrapping).
-                Developed a predictive pricing model for Uber and Lyft rides through comprehensive regression analysis & attained a 96%
-                accuracy.
-              </p>
+<section id="projects" class="py-5" style="background-color: #faf4ef;">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-5">Projects</h1>
+
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Project 1 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/1.jpg" class="card-img-top" alt="Uber vs Lyft">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Uber vs Lyft Price Prediction</h5>
+                  <p class="card-text">
+                    Built a predictive pricing model using OLS, Lasso, Decision Trees, and Bagging. Achieved 96%
+                    accuracy by analyzing ride data and applying ensemble regression techniques.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="https://github.com/VijaySivak/Uber-vs-Lyft-Price-Prediction-and-Analysis"
+                    class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
             </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="https://github.com/VijaySivak/Uber-vs-Lyft-Price-Prediction-and-Analysis" class="btn btn-secondary">Source Code</a>
+            <!-- Project 2 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/2.jpg" class="card-img-top" alt="Twitter Search App">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Twitter Search Application</h5>
+                  <p class="card-text">
+                    Designed a search app using Snowflake, MySQL & MongoDB. Boosted query speed 70x with indexing and
+                    caching. Added ML for sentiment & topic modeling.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="https://github.com/VijaySivak/Twitter-Search-Application" class="btn btn-secondary">Source
+                    Code</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/2.jpg" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 2</h5>
-              <p class="card-text">
-                Developed a Twitter search application using triune database architecture (Snowflake, MySQL, MongoDB) for data
-                management, ETL, and querying. Improved query performance by 70x with intelligent indexing and caching. Integrated machine learning
-                for topic modeling, sentiment analysis, and emotion detection, offering deeper insights.
-              </p>
-            </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="https://github.com/VijaySivak/Twitter-Search-Application" class="btn btn-secondary">Source Code</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/3.jpg" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 3</h5>
-              <p class="card-text">
-                An NLP-driven exam preparation tool that automates question paper and flashcard generation. Fine-tuned LLaMA 3.2-1B
-                model and implemented Retrieval-Augmented Generation (RAG), achieving 74% accuracy and a F1 score of 0.83 in QA generation and
-                0.72 ROUGE-L in flashcard creation, enhancing learning efficiency.
-              </p>
-            </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="#" class="btn btn-secondary">Source Code</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/4.jpg" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 4</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="#" class="btn btn-secondary">Source Code</a>
+            <!-- Project 3 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/3.jpg" class="card-img-top" alt="ExamGen AI Tool">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Exam Generator using LLaMA</h5>
+                  <p class="card-text">
+                    Built an NLP tool to auto-generate question papers and flashcards using LLaMA and RAG. Achieved 74%
+                    QA accuracy and 0.83 F1 score for educational use.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="#" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Project 5 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/5.jpg" class="card-img-top" alt="Project 5">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 5</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Project 4 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/4.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Project 4</h5>
+                  <p class="card-text">
+                    Detailed description for Project 4. Add anything specific about tools, techniques, results, or
+                    purpose here.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="#" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
             </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="#" class="btn btn-secondary">Source Code</a>
+            <!-- Project 5 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/5.jpg" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Project 5</h5>
+                  <p class="card-text">
+                    Add a project summary for this one too. Mention the technologies and what made this project unique
+                    or challenging.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="#" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/Projects/6.jpg" class="card-img-top" alt="Project 6">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Project 6</h5>
+                  <p class="card-text">
+                    This is a placeholder for Project 6. Update this with actual content and make sure it's consistent
+                    with your others.
+                  </p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Blog Post</a>
+                  <a href="#" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Project 6 -->
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/Projects/6.jpg" class="card-img-top" alt="Project 6">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Project 6</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.
-              </p>
-            </div>
-            <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-primary">Blog Post</a>
-              <a href="#" class="btn btn-secondary">Source Code</a>
-            </div>
-          </div>
+
+      </div>
+
+      <!-- Carousel Dots (Indicators) -->
+      <div class="mt-4">
+        <div class="carousel-indicators position-static">
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active bg-dark"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" class="bg-dark"
+            aria-label="Slide 2"></button>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
   <section id="skills" class="py-5">
     <div class="container text-center">
       <h1 class="fw-bold mb-5">Skills</h1>
@@ -648,6 +702,35 @@
       </div>
     </div>
   </section>
+<section id="education" class="py-5" style="background-color: #faf4ef;">
+  <div class="container">
+    <h1 class="fw-bold text-center mb-5">Education</h1>
+
+    <!-- Card Container -->
+    <div class="card p-4 shadow-sm border-0 rounded-4" style="background-color: #fff;">
+      <div class="row g-5 align-items-center justify-content-center text-center text-md-start">
+
+        <!-- University 1 -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+          <img src="images/Education/Rutgers.jpeg" alt="Rutgers Logo" style="height: 120px; object-fit: contain;" class="mb-3">
+          <p class="text-muted mb-1">Aug 2023 – Dec 2024</p>
+          <h5 class="fw-bold mb-1">Master of Science in Data Science</h5>
+          <p class="text-muted">Rutgers University, New Brunswick</p>
+        </div>
+
+        <!-- University 2 -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+          <img src="images/Education/Ramaiah.png" alt="Ramaiah Logo"
+            style="width: 2400px; height: 120px; object-fit: contain;" class="mb-3">
+          <p class="text-muted mb-1">Aug 2017 – June 2021</p>
+          <h5 class="fw-bold mb-1">Bachelor of Engineering in Information Science</h5>
+          <p class="text-muted">MS Ramaiah Institute of Technology, Bangalore</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
   <section id="contact" class="py-5 bg-black text-white">
     <div class="container">
       <h1 class="fw-bold text-center mb-4">Contact Me</h1>
